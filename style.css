@@ -1,0 +1,932 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    list-style: none;
+}
+
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+    line-height: 1.54;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+.wrap{
+    margin: 0 auto;
+    background-image: url(H2.\ 圖片庫/bg_home_yellow.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    position: relative;
+}
+
+.left-turquoise-ball{
+    position: absolute;
+    background-image: url(H2.\ 圖片庫/Ball01_turquoise.svg);
+    width: 138px;
+    height: 360px;
+    background-position: right;
+    top: 588px;
+    z-index: -3;
+}
+
+.light-turquoise-ball{
+    position: absolute;
+    background-image: url(H2.\ 圖片庫/Ball02_light-turquoise.svg);
+    background-size: cover;
+    width: 210px;
+    height: 310px;
+    top: 1694px;
+    z-index: -2;
+    right: 0;
+}
+
+.orange-small-ball{
+    position: absolute;
+    background-image: url(H2.\ 圖片庫/Ball03_yellow.svg);
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    top: 2594.031px;
+    z-index: -1;
+    left: 123.4567px;
+}
+
+.container{
+    max-width: 1120px;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0px;
+    margin-bottom: 30px;
+}
+
+h1 img{
+    width: 218.06px;
+    height: 40px;
+    vertical-align: text-top;
+}
+
+header span a{
+    display: block;
+    background-color: #FF5D50;
+    color: #FFFFFF;
+    padding: 8px 32px;
+    border-radius: 22px;
+}
+
+header span a:hover{
+    background-color: #FFFFFF;
+    color: #FF5D50;
+    padding: 7px 32px;
+    border: 1px solid #FF5D50;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 117px;
+}
+
+.banner-text{
+    width: 50%;
+}
+
+.banner-text h2{
+    font-weight: 650;
+    font-size: 18px;
+    color: #56C4C5;
+    margin-bottom: 8px;
+}
+
+.banner-text p{
+    font-weight: bold;
+    font-size: 48px;
+    color: #221E1F;
+    margin-bottom: 16px;
+}
+
+.banner-text h3{
+    font-size: 20px;
+    color: #221E1F;
+}
+
+.content img{
+    max-width: 523px;
+    height: 100%;
+    margin-right: -52.869px;
+}
+
+.platform h2{
+    margin-top: 101px;
+    margin-bottom: 48px;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    color: #221E1F;
+}
+
+.different-platform{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+
+.different-platform li{
+    width: 33.3333%;
+    text-align: center;
+}
+
+.different-platform li img{
+    width: 90px;
+    height: 90px;
+    margin-bottom: 24px;
+}
+
+.different-platform li h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: #221E1F;
+    margin-bottom: 24px;
+}
+
+.different-platform li p{
+    font-size: 16px;
+    color: #747474;
+}
+
+/* 從這邊開始錄影 */
+
+.character{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.character h2{
+    font-size: 32px;
+    font-weight: 600;
+    color: #221E1F;
+    margin-bottom: 16px;
+}
+
+.character p{
+    font-size: 20px;
+    color: #221E1F;
+    margin-bottom: 48px;
+}
+
+.different-character{
+    display: flex;
+    justify-content: space-between;
+}
+
+.different-character li{
+    width: 23.478%;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px #00000014;
+    background-color: #FFFFFF;
+}
+
+.different-character img{
+    border-radius: 12px 12px 0 0;
+}
+
+.dc-text{
+    padding: 16px 16px 24px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+.different-character h3{
+    font-size: 16px;
+    color: #56C4C5;
+    font-weight: 595;
+    margin-bottom: 16px;
+}
+
+.different-character p{
+    font-size: 16px;
+    color: #221E1F;
+    margin-bottom: 0;
+    /* 為什麼用margin-bottom: 0，才會把多的垂直區塊減掉？ */
+    /* 應該說，為什麼在寫 p 標籤時，下面會多出一塊？ */
+}
+
+/* 停止錄影 */
+
+.function{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.function-item{
+    display: flex;
+    flex-wrap: wrap;
+    width: 52%;
+}
+
+.function-item li{
+    width: 32.198%; /* 如何知道 width 的%數？ */
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px #00000014;
+    padding: 32px 32px 48px;
+}
+
+.function-icon{
+    width: 86px;
+    height: 86px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px #00000014;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.function-item h4{
+    font-size: 18px;
+    color: #221E1F;
+    font-weight: 595;
+    margin-bottom: 16px;
+}
+
+.function-item p{
+    font-size: 16px;
+    color: #221E1F;
+}
+
+.function-item .transfer{
+    margin-right: 47px;
+    margin-bottom: 28px;
+}
+
+.function-item .chatrobot{
+    margin-bottom: 28px;
+}
+
+.function-item .message{
+    margin-right: 47px;
+}
+
+.custom-feature{
+    width: 48%;
+    margin-left: 137px;
+    color: #221E1F;
+}
+
+.custom-feature-text h2{
+    font-size: 32px;
+    font-weight: 600;
+    color: #221E1F;
+    margin-bottom: 16px;
+}
+
+.custom-feature-text p{
+    font-size: 18px;
+    color: #221E1F;
+    margin-bottom: 24px;
+}
+
+.custom-feature-text a{
+    display: inline-block;
+    color: #FFFFFF;
+    background-color: #56C4C5;
+    padding: 12px 32px;
+    border-radius: 27px;
+    text-align: center;
+}
+
+.custom-feature-text a:hover{
+    color: #56C4C5;
+    background-color: #FFFFFF;
+    padding: 10px 32px;
+    border: 2px solid #56C4C5;
+}
+
+  /* 將套件主色改為黃色 */
+:root{
+    --swiper-theme-color: #ffd153;
+}
+  
+.swiper h2{
+    font-size: 32px;
+    font-weight: 600;
+    color: #221e1f;
+    text-align: center;
+    margin-bottom: 104px;
+}
+  
+.swiper-wrapper{
+    padding: 0 0 24px 8px;
+}
+  
+.card{
+    position: relative;
+    box-shadow: 0 2px 10px #00000014;
+    border-radius: 12px;
+    padding: 48px 32px 24px 32px;
+    background-color: #FFFFFF;
+}
+
+.guest-pic{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    left: 32px;
+    top: -56px;
+}
+  
+.swiper-wrapper p{
+    text-align: left;
+    font-size: 16px;
+    color: #221e1f;
+    padding-bottom: 23px;
+    /* 因為下面還有一條分隔線，1px，加起來 24px。 */
+    border-bottom: 1px solid #dddddd;
+}
+  
+.swiper-wrapper h3{
+    font-size: 16px;
+    color: #221e1f;
+    font-weight: 595;
+    padding-top: 24px;
+}
+  
+.guest-star{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8px;
+}
+
+  /* 將底部 pagination 分頁的 active 狀態改為想要的樣式 */
+.swiper-pagination-bullet-active{
+    width: 20px;
+    border-radius: 8px;
+}
+  
+  /* 讓分頁圓點移至下方 */
+.swiper-pagination{
+    position: static;
+}
+
+.footer{
+    text-align: center;
+    background-image: url(H2.\ 圖片庫/footer_character.svg);
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position: center 0;
+    height: 503px;
+    margin-top: 100px;
+}
+
+.footer h2{
+    padding-top: 320.4px;
+    margin-bottom: 47.8px;
+    color: #221E1F;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.footer a{
+    display: inline-block;
+    color: #FFFFFF;
+    background-color: #56C4C5;
+    padding: 12px 32px;
+    border-radius: 27px;
+    margin-bottom: 49.768px;
+}
+
+.footer a:hover{
+    color: #56C4C5;
+    background-color: #FFFFFF;
+    padding: 10px 32px;
+    border: 2px solid #56C4C5;
+}
+
+.footer p{
+    padding: 14px 0;
+    font-size: 16px;
+    background-color: #F5F5F5;
+    color: #221E1F;
+    text-align: center;
+}
+
+.GotoTop-1{
+    position: fixed;
+    width: 71px;
+    height: 71px;
+    z-index: 99;
+    right: 3.4%;
+    bottom: 3.4%;
+}
+
+.GotoTop-1:hover{
+    opacity: 0.9;
+}
+
+@media(max-width:1024px){
+    .GotoTop-1{
+        bottom: 5.413%;
+        right: 64px;
+    }
+
+    .wrap{
+        background-size: 75%;
+    }
+
+    .left-turquoise-ball{
+        width: 109.8px;
+        height: 272.8px;
+        background-size: cover;
+    }
+
+    .light-turquoise-ball{
+        width: 170.8px;
+        height: 280.8px;
+        right: -19.8px;
+    }
+
+    header{
+        margin-right: 75px;
+        margin-left: 20px;
+        padding-top: 34px;
+    }
+
+    .content .banner-text{
+        margin-bottom: -48px;
+    }
+
+    .content img{
+        width: 51.2%;
+        margin-right: 43px;
+        margin-top: 22px;
+    }
+
+    .banner-text{
+        margin-left: 20px;
+    }
+
+    .banner-text h2{
+        font-size: 16px;
+    }
+
+    .banner-text h3{
+        font-size: 18px;
+    }
+
+    .banner-text p{
+        font-size: 36px;
+    }
+
+    .function-item{
+        width: 65%;
+    }
+
+    .custom-feature{
+        margin-left: 28px;
+    }
+
+    .footer{
+        height: 467px;
+    }
+
+    .footer h2{
+        padding-top: 251.39999999999998px;
+        margin-bottom: 41.8px;
+    }
+
+    .footer a{
+        margin-bottom: 24.768px;
+    }
+
+    .footer p{
+        padding: 14px 0;
+    }
+
+    .orange-small-ball{
+        left: -34.3px;
+        top: 2600px;
+    }
+}
+
+@media(max-width:768px){
+    .GotoTop-1{
+        width: 61px;
+        height: 61px;
+        right: 41.3647px;
+        bottom: 6.14%;
+    }
+
+    .wrap{
+        background-size: 75%;
+    }
+    
+    .left-turquoise-ball{
+        width: 98.789px;
+        height: 203.8975px;
+        top: 582px;
+        left: -14px;
+    }
+
+    .light-turquoise-ball{
+        width: 137.8px;
+        height: 177.94px;
+        top: 1514px;
+    }
+
+    .orange-small-ball{
+        width: 145px;
+        height: 145px;
+        top: 2463px;
+        left: -40px;
+    }
+
+    h1 img{
+        width: 179.87px;
+        height: 34.5789px;
+    }
+
+    .content img{
+        width: 54%;
+        margin-top: -8.600000000000001px;
+        margin-right: 29.5px;
+    }
+
+    .content .banner-text{
+        margin-right: 44.5px;
+    }
+
+    .banner-text h2{
+        margin-top: 49px;
+        margin-bottom: 29px;
+    }
+
+    .banner-text h3{
+        margin-top: 2.5999999999999996px;
+    }
+
+    .banner-text p{
+        margin-top: -12px;
+    }
+
+    .platform h2{
+        font-size: 26px;
+    }
+
+    .different-platform{
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 83px;
+    }
+
+    .different-platform li img{
+        width: 75px;
+        height: 75px;
+    }
+
+    .different-platform li h3{
+        font-size: 20.894px;
+    }
+
+    .different-platform li p{
+        font-size: 12.894px;
+    }
+
+    .content{
+        margin-bottom: 184px;
+    }
+
+    .character h2{
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .character p{
+        font-size: 17.89px;
+        margin-bottom: 45px;
+    }
+
+    .different-character p{
+        font-size: 13.897px;
+    }
+
+    .function{
+        margin-bottom: 86px;
+    }
+
+    .function-item{
+        width: 59%;
+    }
+
+    .function-item .transfer{
+        margin-right: 18px;
+    }
+
+    .function-item .message{
+        margin-right: 18px;
+    }
+
+    .custom-feature{
+        width: 38.2%;
+    }
+
+    .custom-feature-text h2{
+        font-size: 26.2px;
+    }
+
+    .custom-feature-text p{
+        font-size: 15.43px;
+    }
+
+    .custom-feature-text a{
+        font-size: 14.5px;
+        padding: 6.05px 24px;
+    }
+
+    .swiper h2{
+        margin-bottom: 96.789px;
+        font-size: 28.790px;
+    }
+
+    .footer{
+        margin-top: 87.89px;
+    }
+
+}
+
+@media(max-width:376px){
+    .GotoTop-1{
+        width: 54px;    
+        height: 54px;
+        right: 58px;
+        bottom: 13.4579%;
+    }
+
+    .wrap{
+        background-image: none;
+    }
+
+    .left-turquoise-ball{
+        width: 126px;
+        height: 126px;
+        left: -83.8px;
+        top: 700.58px;
+    }
+
+    .light-turquoise-ball{
+        width: 135px;
+        height: 135px;
+        top: 3174px;
+        right: -54px;
+    }
+
+    .orange-small-ball{
+        width: 153px;
+        height: 153px;
+        top: 5217px;
+    }
+
+    .container{
+        padding: 0;
+    }
+
+    header{
+        margin-right: 0;
+        margin-left: 0;
+        font-size: 16px;
+        border-bottom: 2px solid #FFD153;
+        padding: 24px 0 13.2px 0;
+    }
+
+    header h1{
+        padding-left: 20px;
+    }
+
+    header span{
+        padding-right: 20px;
+    }
+
+    h1 img{
+        width: 130.84px;
+        height: 24px;
+    }
+
+    .content{
+        display: block;
+        margin-top: -24px;
+        margin-bottom: 92px;
+        padding: 0 20px 0;
+    }
+
+    .content img{
+        width: 100%;
+        height: auto;
+        background-image: url(H2.\ 圖片庫/bg_home_sm_yellow.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        margin-top: 29.4px;
+    }
+
+    .content .banner-text{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .banner-text h2{
+        margin-right: -66px;
+        margin-top: 41.3px;
+        margin-bottom: 19.8px;
+    }
+
+    .banner-text h3{
+        margin-right: -171px;
+        font-size: 16px;
+        margin-top: -5.399999999999999px;
+    }
+
+    .banner-text p{
+        margin-right: -157px;
+        font-style: 32px;
+    }
+
+    .platform{
+        padding: 0 20px 0;
+    }
+
+    .platform h2{
+        font-size: 28px;
+        margin-bottom: 32px;
+    }
+
+    .different-platform{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+
+    .different-platform li{
+        width: 100%;
+    }
+
+    .different-platform li img{
+        width: 60px;
+        height: 60px;
+        margin-bottom: 16px;
+    }
+
+    .different-platform li h3{
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+
+    .different-platform li p{
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+
+    .character{
+        padding: 0 20px 0;
+    }
+
+    .character h2{
+        font-size: 28px;
+        margin-bottom: 16px;
+    }
+
+    .character p{
+        font-size: 18px;
+        margin-bottom: 32px;
+    }
+
+    .different-character{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .different-character li{
+        width: 260px;
+        height: 388px;
+        margin-bottom: 24px;
+    }
+
+    .different-character img{
+        width: 260px;
+        height: 260px;
+        margin-bottom: 16px;
+    }
+
+    .dc-text{
+        padding: 0 16px 24px;
+    }
+
+    .dc-text p{
+        font-size: 16px;
+    }
+
+    .function{
+        flex-direction: column-reverse;
+        padding: 0 20px 0;
+    }
+
+    .function-item{
+        width: 77%;
+    }
+
+    .function-item li{
+        width: 87%;
+        margin: 0 0 24px 0;
+    }
+
+    .function-item .transfer{
+        margin-right: 0;
+    }
+
+    .function-item .message{
+        margin-right: 0;
+    }
+
+    .custom-feature{
+        width: 86vw;
+        text-align: center;
+    }
+
+    .custom-feature-text h2{
+        font-size: 28px;
+        margin-bottom: 16px;
+    }
+
+    .custom-feature-text p{
+        font-size: 16px;
+        margin-bottom: 21px;
+    }
+
+    .custom-feature-text a{
+        padding: 12px 32px;
+        margin-bottom: 44px;
+    }
+
+    .swiper{
+        padding: 0 20px 0;
+    }
+
+    .swiper-pagination{
+        padding: 0 20px 0;
+    }
+
+    .footer{
+        margin-top: 60px;
+        background-image: url(H2.\ 圖片庫/footer_sm.svg);
+    }
+
+    .footer h2{
+        padding-top: 293px;
+        font-size: 24px;
+        margin-bottom: 53px;
+    }
+
+    .footer a{
+        margin-bottom: 72px;
+        margin: 0 auto 53px auto;
+    }
+
+    .footer p{
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+}

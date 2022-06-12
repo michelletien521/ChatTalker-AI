@@ -1,0 +1,509 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    list-style: none;
+}
+
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+    line-height: 1.54;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+sub{
+    vertical-align: sub;
+}
+
+.wrap{
+    margin: 0 auto;
+    position: relative;
+    background-image: url(H2.\ 圖片庫/banner_megaphone.svg);
+    background-position: right -10px top;
+    background-repeat: no-repeat;
+    height: 559px;
+}
+
+/* 會建議最下面灰色背景底圖跟上方的 background-image 用什麼方式去呈現呢？*/
+
+.wrap::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 480.9px;
+    border-radius: 0px 0px 0px 320px;
+    background-color: #F7F9FD;
+    z-index: -1;
+}
+
+.light-yellow-ball{
+    background-image: url(H2.\ 圖片庫/Ball03_yellow.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: -2;
+    width: 94px;
+    height: 361px;
+    left: 0;
+    top: 856px;
+}
+
+.container{
+    max-width: 1120px;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0;
+    align-items: center;
+    margin-bottom: 92px;
+}
+
+h1 img{
+    width: 218.06px;
+    height: 40px;
+    vertical-align: text-top;
+}
+
+header span a{
+    display: block;
+    background-color: #FF5D50;
+    color: #FFFFFF;
+    padding: 8px 32px;
+    border-radius: 22px;
+}
+
+header span a:hover{
+    background-color: #FFFFFF;
+    color: #FF5D50;
+    padding: 7px 32px;
+    border: 1px solid #FF5D50;
+}
+
+.price-banner-text h2{
+    font-weight: bold;
+    font-size: 48px;
+    color: #221E1F;
+    margin-bottom: 16px;
+}
+
+.price-banner-text p{
+    font-size: 16px;
+    color: #221E1F;
+    margin-left: 3.789px;
+}
+
+.price-plan h3{
+    text-align: center;
+    font-weight: 600;
+    color: #221E1F;
+    font-size: 32px;
+    margin-top: 280px;
+    margin-bottom: 48px;
+}
+
+.subscriber{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 54px;
+}
+
+.subscriber li{
+    margin: 0 16px 16px;
+}
+
+.subscriber li a{
+    display: inline-block;
+    color: #56C4C5;
+    border: 1px solid #56C4C5;
+    background-color: #FFFFFF;
+    font-size: 18px;
+    padding: 12px 32px;
+    border-radius: 34px;
+}
+
+.subscriber li a:hover{
+    display: inline-block;
+    color: #FFFFFF;
+    border: 1px solid #56C4C5;
+    background-color: #56C4C5;
+    font-size: 18px;
+    padding: 11px 32px;
+    border-radius: 34px;
+}
+
+.plan-detail{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.basic, .standard{
+    width: 44.8%;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0px 2px 10px #00000014;
+    margin-right: 21px;
+}
+
+.basic h4, .standard h4{
+    text-align: center;
+    font-weight: 550;
+    color: #221E1F;
+    font-size: 24px;
+    padding: 10px 0 15px 0;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.basic-item{
+    padding: 32px 23px;
+    text-align: center;
+}
+
+.basic-item p{
+    font-size: 16px;
+    color: #221E1F;
+    margin-bottom: 32px;
+}
+
+.plan-pay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.plan-pay li{
+    background-color: #F5F5F5;
+    border-radius: 12px;
+    padding: 24px 32px;
+}
+
+.plan-pay p{
+    font-size: 12px;
+    color: #221E1F;
+    margin-bottom: 8px;
+}
+
+.numbers{
+    font-size: 32px;
+    color: #56C4C5;
+}
+
+.money{
+    font-size: 32px;
+    color: #221E1F;
+}
+
+sub{
+    font-size: 12px;
+}
+
+.plan-pay .equal_text{
+    align-self: center;
+    font-size: 29px;
+    background-color: #FFFFFF;
+    color: #221E1F;
+    padding: 0;
+    margin-left: 21px;
+    margin-right: 21px;
+}
+
+.plan-features{
+    padding: 0 34px 32px;
+    text-align-last: left;
+}
+
+.plan-features li{
+    background-image: url(H2.\ 圖片庫/icon_check.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 26.7px;
+    margin-bottom: 16px;
+    line-height: 24px;
+}
+
+.plan-features p{
+    font-size: 16px;
+    color: #221E1F;
+}
+
+.basic-item a{
+    background-color: #56C4C5;
+    color: #FFFFFF;
+    font-size: 18px;
+    padding: 12px 32px;
+    border-radius: 27px;
+}
+
+.basic-item a:hover{
+    background-color: #FFFFFF;
+    color: #56C4C5;
+    padding: 10px 32px;
+    border: 2px solid #56C4C5;
+}
+
+.faq{
+    margin-bottom: 100px;
+}
+
+.faq h3{
+    font-weight: 600;
+    font-size: 32px;
+    color: #221E1F;
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+.faq li{
+    padding: 16px 32px;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    background-color: #FFFFFF;
+}
+
+.problem .QA-Plus{
+    background-image: url(H2.\ 圖片庫/icon_plus.svg);
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+.problem .QA-Minus{
+    background-image: url(H2.\ 圖片庫/icon_minus.svg);
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+.problem .QA-Title{
+    font-size: 18px;
+    color: #221E1F;
+}
+
+/* 『+』號與《變更方案》文字 對齊方式建議怎麼處理？  */
+
+.problem .QA-Answer{
+    font-size: 16px;
+    color: #747474;
+    padding: 24px 0;
+    line-height: 3.124;
+}
+
+.problem .QA-Answer .active{
+    display: block;
+}
+
+.problem .turquoise{
+    color: #56C4C5;
+    font-weight: 550;
+}
+
+.footer p{
+    padding: 16px 0;
+    font-size: 16px;
+    background-color: #F5F5F5;
+    color: #221E1F;
+    text-align: center;
+}
+
+.GotoTop-2{
+    position: fixed;
+    width: 71px;
+    height: 71px;
+    z-index: 99;
+    right: 3.4%;
+    bottom: 3.4%;
+}
+
+.GotoTop-2:hover{
+    opacity: 0.9;
+}
+
+@media(max-width:376px){
+    .GotoTop-2{
+        width: 54px;    
+        height: 54px;
+        right: 8px;
+        bottom: 1.35%;
+    }
+
+    .wrap{
+        background-image: url(H2.\ 圖片庫/banner_sm.svg);
+        background-position: right bottom;
+        height: 567px;
+    }
+
+    .wrap::after {
+        height: 567px;
+        border-radius: 0px 0px 0px 168px;
+    }
+
+    .light-yellow-ball{
+        background-size: 240.4%;
+        top: 1386px;
+    }
+
+    .container{
+        padding: 0;
+    }
+
+    header{
+        font-size: 16px;
+        border-bottom: 2px solid #FFD153;
+        padding: 24px 0 13.2px 0;
+        background: #FFFFFF;
+    }
+
+    header h1{
+        padding-left: 20px;
+    }
+
+    header span{
+        padding-right: 20px;
+    }
+
+    h1 img{
+        width: 130.84px;
+        height: 24px;
+    }
+
+    .price-banner{
+        padding: 0 20px 0;
+    }
+
+    .price-banner-text h2{
+        font-size: 32px;
+        margin-top: -48px;
+        margin-bottom: 16px;
+    }
+
+    .price-banner-text p{
+        margin-bottom: 361px;
+    }
+
+    .price-plan{
+        padding: 0 20px 0;
+    }
+
+    .price-plan h3{
+        font-size: 28px;
+        padding-top: 60px;
+    }
+
+    .subscriber{
+        margin-top: 24px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 32px;
+    }
+
+    .plan-detail{
+        padding: 0 20px 0;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+
+    .basic, .standard{
+        margin-bottom: 24px;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .basic-item{
+        padding: 31px 16px;
+    }
+
+    .basic-item p{
+        margin-bottom: 25px;
+        font-size: 14px;
+    }
+
+    .plan-pay{
+        justify-content: space-evenly;
+        margin-bottom: 0;
+    }
+
+    .plan-pay li{
+        padding: 16px 21.3px;
+    }
+
+    .plan-pay p{
+        margin-bottom: 8px;
+    }
+
+    .plan-pay .equal_text{
+        margin: 0 auto;
+    }
+
+    .plan-pay span{
+        font-size: 28px;
+    }
+
+    .plan-features{
+        padding: 27px 0;
+    }
+
+    .plan-features p{
+        margin-bottom: 0;
+    }
+
+    .faq{
+        padding: 0 20px 0;
+        margin-bottom: 60px;
+    }
+
+    .faq li{
+        padding: 16px;
+    }
+
+    .faq h3{
+        font-size: 28px;
+        margin-bottom: 32px;
+    }
+
+    .problem .QA-Title{
+        font-size: 16px;
+    }
+
+    .problem .QA-Plus{
+        background-size: 16px;
+    }
+
+    .footer p{
+        padding: 15.2px 0;
+        font-size: 14.5px;
+    }
+
+}
